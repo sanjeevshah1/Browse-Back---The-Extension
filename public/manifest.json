@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Browse Back",
+    "version": "1.0",
+    "description": "A smarter way to browse back through your history",
+    "permissions": ["history"],
+    "host_permissions" : ["https://*/*", "http://*/*"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+    ,"icons":{
+        "128": "icon.png"
+    }
+}
